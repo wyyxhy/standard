@@ -8,9 +8,9 @@
 >2. 标准统一，提升协作效率。
 >3. 追求卓越的工匠精神，打磨精品代码。
 
-## 文件命名
+## 文件目录
 ```目录结构
- src/  
+src/  
 |- assets/  
     |- css/
         |- elementTheme/   //在官网设置主题后文件的存放位置
@@ -23,7 +23,7 @@
     |- js/                //js文件
 |- components
     |- index.js           //全局组件的输出口
-    |- DsButton.vue       //组件命名要求大驼峰
+    |- DsButton.vue       //组件命名要求首写大写，且以特定的前缀
 |- config/
 |- router/
 |- store/
@@ -38,6 +38,22 @@
         |- reportDetail/     //如果该模块下不止一个文件，则建文件夹
             |- index.vue    //ReportDetail下的入口文件
             |- AddDialog.vue
+```
+
+## vue代码风格
+按照vue官网风格指南来书写Vue代码。[链接](https://cn.vuejs.org/v2/style-guide/)
+## js代码规范
+* 按照airbnb的规范来编写eslint配置  
+[英文版](https://github.com/airbnb/javascript)  
+[中文版](https://github.com/libertyAlone/airbnb-javascript-style-guide-cn)
+* 约定规范
+> 在dom上的方法以handle开头命名。例如：handleAddFile。  
+>自己定义的方法以易懂的命名方式命名。例如：getFileList。  
+> handle开头的方法放在methods中的前面，自定义的方法放在后面，这样代码清晰易看。
+
+
+
+
 
 
 
