@@ -35,10 +35,12 @@ src/
 |- views/
     |- modename/             //模块名，尽量单个单词
         |- index.vue         //入口文件
-        |- ReportDetail.vue  // 该模块下的直系某个页面或者某个组件
-        |- reportList/       //如果该模块下不止一个文件，则建文件夹
+        |- ReportDetail.vue  // 该模块下的直系某个页面
+        |- components/       //该模块下多个下级模块会公用的组件
+        |- reportList/       //如果二级模块下不止一个文件，则建文件夹
             |- index.vue     //ReportDetail下的入口文件
             |- AddDialog.vue
+            |- components/   //该模块页面下的组件
 ```
 
 ## vue代码风格
